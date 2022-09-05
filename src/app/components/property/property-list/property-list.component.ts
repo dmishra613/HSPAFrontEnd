@@ -9,7 +9,7 @@ import { HousingService } from 'src/app/services/housing.service';
 })
 export class PropertyListComponent implements OnInit {
 
-  properties:any;
+  properties:Array<any>=[];
   constructor(private housingService:HousingService) { }
 
   ngOnInit(): void {
